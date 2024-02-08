@@ -3,16 +3,16 @@ import {FlatList, SafeAreaView, StyleSheet, View} from 'react-native';
 import HeaderCard from './src/components/HeaderCard/Header';
 import AddTaskCard from './src/components/AddTaskCard/AddTask';
 import TaskCard from './src/components/TaskCard';
-import {taskStore} from './src/Store/taskStore';
+import {userStore} from './src/Store/userStore';
 
 function App() {
-  const taskState = taskStore(state => state);
+  const userState = userStore(state => state);
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
         <HeaderCard />
         <FlatList
-          data={taskState.objects}
+          data={userState.objects}
           renderItem={({item}) => <TaskCard props={item} />}
         />
       </View>

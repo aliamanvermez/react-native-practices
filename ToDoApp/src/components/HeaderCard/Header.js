@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text, Image, SafeAreaView} from 'react-native';
 import styles from './Header.style';
-import {taskStore} from '../../Store/taskStore';
+import {userStore} from '../../Store/userStore';
 
 const Header = () => {
-  const taskState = taskStore(state => state);
+  const taskState = userStore(state => state);
   return (
     <SafeAreaView>
       <View style={styles.container}>

@@ -8,11 +8,11 @@ import {
 } from 'react-native';
 
 import styles from './AddTask.style';
-import {taskStore} from '../../Store/taskStore';
+import {userStore} from '../../Store/userStore';
 
 const AddTaskCard = props => {
   const [input, setInput] = useState('');
-  const taskState = taskStore(state => state);
+  const taskState = userStore(state => state);
   const handleInputChange = text => {
     setInput(text);
   };
