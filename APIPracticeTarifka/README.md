@@ -4,7 +4,7 @@ This project aims to develop a meal application using React Native and The Meal 
 
 ## Sample Screenshots
 
-![App Record](record.gif)
+![App Record] <img src="record.gif" width="300">
 
 
 ## About the Project
